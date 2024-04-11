@@ -41,10 +41,10 @@ h1 {
   padding: 1rem;
   text-align: end;
 }
-.pre-dis {
+#pre-dis {
   font-size: 2rem;
 }
-.res-dis {
+#res-dis {
   font-size: 3rem;
 }
 /*display area of the calculator end*/
