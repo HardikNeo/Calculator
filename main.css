@@ -29,6 +29,7 @@ h1 {
   width: 20rem;
   background-color: aquamarine;
   border-radius: 10px;
+  text-align: center;
 }
 /*display area of the calculator start*/
 .display {
@@ -47,6 +48,27 @@ h1 {
   font-size: 3rem;
 }
 /*display area of the calculator end*/
+.key {
+  display: grid;
+  grid-template-rows: 4rem 4rem 4rem 4rem;
+  grid-template-columns: 4rem 4rem 4rem 4rem;
+  grid-gap: 0.5rem;
+  margin: 1rem;
+}
+.key-btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  transition: 100ms ease-in-out;
+}
+.btn-4,
+.btn-8,
+.btn-16 {
+  font-size: 2rem;
+}
+.key-btn:hover {
+  border-radius: 20px;
+}
 .footer {
   height: 2rem;
   text-align: center;
