@@ -7,7 +7,7 @@
   font-family: "lato";
 }
 body {
-  background-color: antiquewhite;
+  background-color: #d3f9d8;
 }
 h1 {
   font-size: 2rem;
@@ -27,7 +27,7 @@ h1 {
   margin: auto;
   height: 30rem;
   width: 20rem;
-  background-color: aquamarine;
+  background-color: #8ce99a;
   border-radius: 10px;
   text-align: center;
 }
@@ -59,6 +59,8 @@ h1 {
   padding: 0.5rem;
   border-radius: 10px;
   font-size: 1.5rem;
+  background-color: #ebfbee;
+  border-color: #2b8a3e;
   transition: 100ms ease-in-out;
 }
 .btn-4,

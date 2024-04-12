@@ -24,8 +24,6 @@ function ope(operator) {
 
 function eq() {
   num2 = a;
-  console.log(num1, num2);
-  a = 0;
   if (op === "+") {
     res = num1 + num2;
   } else if (op === "-") {
@@ -35,9 +33,10 @@ function eq() {
   } else if (op === "*") {
     res = num1 * num2;
   } else {
-    console.log("IDK WHAT HAPPENED");
+    console.log("No operator provied");
+    alert("No Operator Provided");
+    res = a;
   }
-  console.log(res);
   resdis.textContent = "= " + res;
   check = 0;
   a = 0;
