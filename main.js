@@ -4,10 +4,18 @@ var num1 = 0;
 var num2 = 0;
 var res = 0;
 var check = 0;
+var chk = 0;
 
 const predis = document.getElementById("pre-dis");
 const resdis = document.getElementById("res-dis");
 function num(b) {
+  if (chk === 0) {
+    predis.textContent = "";
+    resdis.textContent = "";
+    chk = 1;
+    num1 = 0;
+  }
+  check = 1;
   console.log(a, num1, num2, res, check);
 
   a = a * 10 + b;
@@ -18,6 +26,10 @@ function ope(operator) {
   console.log(a, num1, num2, res, check);
   if (num1 === 0) {
     num1 = a;
+  }
+  if (check === 0) {
+    chk = 1;
+    check = 1;
   }
   predis.textContent = num1;
   a = 0;
@@ -43,6 +55,7 @@ function eq() {
     res = a;
   }
   resdis.textContent = "= " + res;
+  chk = 0;
   check = 0;
   a = 0;
   num1 = res;
